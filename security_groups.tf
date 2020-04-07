@@ -5,11 +5,27 @@ resource "aws_security_group" "public" {
   vpc_id      = aws_vpc.cfv_test_vpc.id
   # vpc_id        = data.aws_vpc.cfv_vpc.id
 
-  # ssh access
+  # ssh access - optional
   ingress {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
+    cidr_blocks = var.public_ip_access_list
+  }
+
+  # CyberFlood required port
+  ingress {
+    from_port   = 1002
+    to_port     = 1002
+    protocol    = "tcp"
+    cidr_blocks = var.public_ip_access_list
+  }
+
+  # icmp access - required for Cyberflood
+  ingress {
+    from_port   = 8
+    to_port     = 0
+    protocol    = "icmp"
     cidr_blocks = var.public_ip_access_list
   }
 

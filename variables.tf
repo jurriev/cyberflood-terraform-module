@@ -36,16 +36,13 @@ variable "instance_type" {
 }
 
 variable "vpc_cidr_ipv4" {
-  default = "172.23.0.0/16"
+  default = "172.22.0.0/16"
 }
 
 # subnet & interface config
 
 variable "mgmt_subnet" {
-  default = "172.23.0.0/24"
-}
-variable "ip_cfv_mgmt_a" {
-  default = "172.23.0.5"
+  default = "172.22.0.0/24"
 }
 
 variable "cfv_key_pair" {

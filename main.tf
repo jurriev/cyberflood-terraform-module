@@ -28,12 +28,12 @@ module "aws_cfv_instance" {
   security_groups_test_interface = [aws_security_group.internal.id]
   associate_public_ip_address = true
   source_dest_check = false
-  private_ip = "172.23.0.5"
-  test_net_1_cidr_block = "172.23.1.0/24"
-  private_test_ips_interface_1 = ["172.23.1.10"]
+  private_ip = "172.22.0.5"
+  test_net_1_cidr_block = "172.22.1.0/24"
+  private_test_ips_interface_1 = ["172.22.1.10"]
   cfv_destination_cidr_int_1 = "10.10.101.0/24"
-  test_net_2_cidr_block = "172.23.2.0/24"
-  private_test_ips_interface_2 = ["172.23.2.10"]
+  test_net_2_cidr_block = "172.22.2.0/24"
+  private_test_ips_interface_2 = ["172.22.2.10"]
   cfv_destination_cidr_int_2 = "10.10.102.0/24"
 
 

@@ -48,12 +48,6 @@ variable "subnet_id" {
   default     = ""
 }
 
-# variable "subnet_ids" {
-#   description = "A list of VPC Subnet IDs to launch in"
-#   type        = list(string)
-#   default     = []
-# }
-
 variable "associate_public_ip_address" {
   description = "If true, the EC2 instance will have associated public IP address"
   type        = bool
@@ -65,12 +59,6 @@ variable "private_ip" {
   type        = string
   default     = null
 }
-
-# variable "private_ips" {
-#   description = "A list of private IP address to associate with the instance in a VPC. Should match the number of instances."
-#   type        = list(string)
-#   default     = []
-# }
 
 variable "source_dest_check" {
   description = "Controls if traffic is routed to the instance when the destination address does not match the instance. Used for NAT or VPNs."
@@ -84,12 +72,6 @@ variable "tags" {
   default     = {}
 }
 
-# variable "network_interface" {
-#   description = "Customize network interfaces to be attached at instance boot time"
-#   type        = list(map(string))
-#   default     = []
-# }
-
 variable "test_net_1_cidr_block" {
   description = "The CIDR block for test subnet 1"
   type        = string
@@ -101,7 +83,6 @@ variable "test_net_2_cidr_block" {
   type        = string
   default     = ""
 }
-
 
 variable "private_test_ips_interface_1" {
   description = "Private IP addresses to associate with test interface 1"
@@ -138,4 +119,3 @@ variable "security_groups_test_interface" {
   type        = list(string)
   default     = []
 }
-
