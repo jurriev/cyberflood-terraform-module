@@ -9,8 +9,10 @@
 Install and setup Terraform with your AWS account. Download project from this page.
 
 Edit following two files in the main project directory:
-    variables.tf  
-    main.tf
+```
+variables.tf  
+main.tf
+```
 
 configure following parameters in these files
 > AWS region  
