@@ -1,5 +1,3 @@
-# module variable example https://github.com/terraform-aws-modules/terraform-aws-ec2-instance/blob/v2.13.0/variables.tf
-
 variable "name" {
   description = "Name to be used on all resources as prefix"
   type        = string
