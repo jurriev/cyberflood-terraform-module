@@ -1,17 +1,16 @@
 # cyberflood-terraform-module
 
-CyberFlood Virtual Terraform module example
+## CyberFlood Virtual Terraform module example
 
-Configuration includes complete AWS configuration of a single CyberFlood Virtual (CFV) instance configured for traffic between its two ports.
+ Includes complete AWS configuration of a single CyberFlood Virtual (CFV) instance configured for traffic between its two ports.
 
-Instructions:
+### Instructions:
 
 Install and setup Terraform with your AWS account. Download project from this page.
 
 Edit following two files in the main project directory:
-> variables.tf
->
-> main.tf
+    variables.tf  
+    main.tf
 
 configure following parameters in these files
 > AWS region  
