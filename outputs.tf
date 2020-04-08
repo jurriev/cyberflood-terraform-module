@@ -41,7 +41,7 @@ output "cfv_test_if_1_ips" {
 }
 
 output "cfv_test_if_2_ips" {
-    value = module.aws_cfv_instance.test_if_1_ips
+    value = module.aws_cfv_instance.test_if_2_ips
 }
 
 output "cfv_test_if_1_route" {
